@@ -1,0 +1,48 @@
+.header {
+    margin: 0;
+    background: darkcyan;
+    height: 50px;
+    width: 100%;
+}
+
+.left-header {
+    float: left;
+}
+
+.right-header {
+    float: right;
+    margin-right: 5%;
+    margin-top: 0;
+    padding: 0;
+}
+
+.right-header-links {
+    float: inside;
+}
+
+.links {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.top-main {
+    float: inside;
+    padding-left: 40%;
+    padding-right: 40%;
+    height: 150px;
+    width: 20%;
+}
+
+.footer {
+
+}
+
+.right-footer {
+    float: right;
+}
+
+
+
+
+
+
