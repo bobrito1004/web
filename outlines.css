@@ -1,8 +1,9 @@
-.header {
-    margin: 0;
-    background: darkcyan;
+header {
+    margin: 0 0 0 0;
+    background: aqua;
     height: 50px;
     width: 100%;
+    color: red;
 }
 
 .left-header {
@@ -12,25 +13,33 @@
 .right-header {
     float: right;
     margin-right: 5%;
-    margin-top: 0;
+    margin-top: 16px;
     padding: 0;
+    color: red;
 }
 
-.right-header-links {
-    float: inside;
-}
 
 .links {
     display: inline-block;
     margin-right: 50px;
 }
 
+.link {
+    color: chartreuse;
+}
+
 .top-main {
-    float: inside;
     padding-left: 40%;
     padding-right: 40%;
     height: 150px;
     width: 20%;
+    background: yellow;
+    color: red;
+}
+
+.bottom-main {
+    margin: 0;
+    background: deeppink;
 }
 
 
@@ -38,7 +47,36 @@
     float: right;
 }
 
+body {
+    margin: 0;
+    float: top;
+    margin-block: 0;
+}
 
+main {
+    margin: 0;
+    border: 0 solid chartreuse;
+}
+
+footer {
+    height: 50px;
+    background: aqua;
+}
+h1 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+pre {
+    margin: 0;
+}
 
 
 
