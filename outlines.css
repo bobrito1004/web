@@ -8,6 +8,7 @@ header {
 
 .left-header {
     float: left;
+    margin-top: 16px;
 }
 
 .right-header {
