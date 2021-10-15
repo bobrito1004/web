@@ -1,9 +1,10 @@
 header {
     margin: 0 0 0 0;
-    background: aqua;
+    background: linear-gradient(90deg, #373B44 0%, rgba(66, 134, 244, 15) 100%);
     height: 50px;
     width: 100%;
-    color: red;
+    color: #e2e2e2;
+    padding: 10px 0;
 }
 
 .left-header {
@@ -16,7 +17,7 @@ header {
     margin-right: 5%;
     margin-top: 16px;
     padding: 0;
-    color: red;
+
 }
 
 
@@ -26,21 +27,21 @@ header {
 }
 
 .link {
-    color: chartreuse;
+    color: #e2e2e2;
 }
 
 .top-main {
-    padding-left: 40%;
-    padding-right: 40%;
-    height: 150px;
-    width: 20%;
-    background: yellow;
-    color: red;
+    text-align: center;
+    background: #e2e2e2;
+    color: black;
+    border-bottom: 5px solid black;
+    padding: 20px 20px 100px;
 }
 
 .bottom-main {
     margin: 0;
-    background: deeppink;
+    text-align: center;
+    padding: 10px;
 }
 
 
@@ -57,36 +58,56 @@ body {
 
 main {
     margin: 0;
-    border: 0 solid chartreuse;
+    border: 20px double black;
+    padding: 10px;
+    background: #E2E2E2;
 }
 
 footer {
     height: 50px;
-    background: aqua;
-}
-h1 {
-    margin: 0;
+    background: linear-gradient(90deg, rgba(66, 134, 244, 15) 0%, #373B44 100%);
 }
 
-h4 {
-    margin: 0;
-}
-
-ul {
-    margin: 0;
-}
-
-pre {
-    margin: 0;
-}
-
-p {
-    margin: 0;
-}
-
+h1,
+h4,
+ul,
+pre,
+p,
 blockquote {
     margin: 0;
 }
 
+a:not([class]) {
+    decoration-decoration-skip-link: auto;
+}
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    filter: drop-shadow(0 0 0.75rem rgba(66, 134, 244, 15));
+}
 
+li {
+    list-style-type: none;
+}
+
+.contact {
+    text-align: right;
+}
+
+#quote {
+    text-align: left;
+}
+
+#greet {
+    font-family: "Times New Roman";
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
