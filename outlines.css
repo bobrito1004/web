@@ -42,6 +42,7 @@ header {
     margin: 0;
     text-align: center;
     padding: 10px;
+    border-bottom: 5px solid black;
 }
 
 
@@ -81,10 +82,11 @@ a:not([class]) {
     decoration-decoration-skip-link: auto;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
+
 img {
     filter: drop-shadow(0 0 0.75rem rgba(66, 134, 244, 15));
 }
@@ -95,6 +97,7 @@ li {
 
 .contact {
     text-align: right;
+    padding: 0;
 }
 
 #quote {
@@ -110,4 +113,41 @@ li {
     font-style: italic;
     text-decoration: underline;
     text-transform: capitalize;
+}
+
+.contact_info {
+    display: flex;
+}
+
+.j_quote {
+    display: flex;
+}
+
+.info_quote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table{
+    text-align: center;
+    width: 100%;
+}
+.table__title{
+    font-size: 32px;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+.table__title-line{
+    width: 640px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px 0px;
+    overflow: auto;
+}
+.box{
+    font-size: 24px;
+    line-height: 33px;
+    padding: 1em;
 }
