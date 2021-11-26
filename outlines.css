@@ -171,12 +171,6 @@ body._lock {
     border-bottom: 5px solid black;
 }
 
-/* .right-footer {
-  margin-top: 16px;
-  float: right;
-  margin-right: 20px;
-} */
-
 body {
     margin: 0;
     float: top;
@@ -211,10 +205,6 @@ p,
 blockquote {
     margin: 0;
 }
-
-/* a:not([class]) {
-  decoration-decoration-skip-link: auto;
-} */
 
 a {
     color: inherit;

@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+.page__section_4 {
+    text-align: center;
+}
+
+main {
+    border-radius: 40px;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+body {
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 32px 16px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: rgb(16, 30, 39);
+    margin-top: 80px;
+}
+
+#task__form {
+    display: flex;
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task__input {
+    flex: 1 1 0%;
+    background-color: lightgray;
+    padding: 16px;
+    margin-right: 16px;
+    font-size: 20px;
+    border: solid black;
+    border-radius: 40px;
+}
+
+#task__input::placeholder {
+    color: rgb(46, 19, 24);
+}
+
+#task__submit {
+    color: rgb(33, 56, 68);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#task__submit:hover {
+    opacity: 0.8;
+}
+
+#task__submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 32px 16px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task__box {
+    padding: 16px;
+}
+
+.task__box h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: solid black;
+}
+
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text {
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only) {
+    color: red;
+}
+
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -8px;
+}
+
+.task .actions button {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit {
+    color: forestgreen;
+}
+
+.task .actions .delete {
+    color: brown;
+}
