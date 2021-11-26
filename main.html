@@ -8,29 +8,29 @@
     <link href="outlines.css" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="left-header">
-        <p>ЛОГОТИП</p>
+<header class="header">
+    <div class="header__container">
+        <a href="" class="header__logo"></a>
+        <div class="header__menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li>
+                        <a data-goto=".page__section_1" href="/examples.html" class="menu__link">Мои работы</a>
+                    </li>
+                    <li>
+                        <a data-goto=".page__section_2" href="#" class="menu__link">Мои достижения</a>
+                    </li>
+                    <li>
+                        <a data-goto=".page__section_3" href="#" class="menu__link">Друзья</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <nav class="right-header">
-        <ul>
-            <li class="links">
-                <div class="link">
-                    <a href="examples.html">Мои работы</a>
-                </div>
-            </li>
-            <li class="links">
-                <div class="link">
-                    <a href="maiт.html">Мои достижения</a>
-                </div>
-            </li>
-            <li class="links">
-                <div class="link">
-                    <a href="main.html">Друзья</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+
 </header>
 <main>
     <section class="top-main">
@@ -40,7 +40,7 @@
             Я делаю лабораторные.<br>
             <strong>Я молодец.</strong><br>
     </section>
-    <section class="bottom-main">
+    <section class="bottom-main page__section_2">
         <p>
             <img src="kotik.jpg" alt="КОТИК!" width="600" height="338">
         </p>
@@ -70,9 +70,8 @@
             </div>
         </div>
     </section>
-    <section class="table">
+    <section class="table page__section_3">
         <h2 class="table__title">Статы персонажев в Дотке</h2>
-        <hr class="line table__title-line">
         <div class="grid">
             <div class="box">Персонаж</div>
             <div class="box">Сила</div>
@@ -101,10 +100,12 @@
         </div>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <div class="right-footer">
         <p>Бабинцев Алексей, 2021 &#169;</p>
     </div>
 </footer>
+<script src="main.js"></script>
+<script src="time.js"></script>
 </body>
 </html>
