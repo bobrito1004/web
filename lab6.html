@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-    <title>Мои работы</title>
+    <title>Web</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="Страница, личная, визитка">
     <meta name="description" content="Сайт визитка">
     <link href="outlines.css" rel="stylesheet">
-    <link rel="stylesheet" href="ToDoList.css">
 </head>
-
-<body class="page__section_4">
+<body>
 <header class="header">
     <div class="header__container">
         <a href="./main.html" class="header__logo"></a>
@@ -30,10 +27,10 @@
                     <!--                        <a data-goto=".page__section_3" href="#" class="menu__link">Друзья</a>-->
                     <!--                    </li>-->
                     <li>
-                        <a href="./ToDoList.html" class="menu__link current">Список дел</a>
+                        <a href="./ToDoList.html" class="menu__link">Список дел</a>
                     </li>
                     <li>
-                        <a href="./lab6.html" class="menu__link">lab6</a>
+                        <a href="./lab6.html" class="menu__link current">lab6</a>
                     </li>
                 </ul>
             </nav>
@@ -41,24 +38,22 @@
     </div>
 
 </header>
-<div class="find">
-    <h1>Список дел</h1>
-    <form id="task__form">
-        <input type="text" id="task__input" placeholder="Чего сегодя делаем?">
-        <input type="submit" value="Добавить" id="task__submit">
-    </form>
-</div>
 <main>
-
-    <section class="task__box">
-        <h2>Дела</h2>
-        <div id="tasks">
-        </div>
+    <section class="top-main">
+        <div class="container">
+            <div class="fetch__button">
+                <button id="btn" type="button" class="button">
+                    Показать пост
+                </button>
+            </div>
+            <!-- <div class="preloader">
+                Loading...
+              </div> -->
+            <div class="fetch__body" id="CardDiv"></div>
         </div>
     </section>
 </main>
-<script src="ToDoList.js"></script>
+<script src="./fetch.js"></script>
 <script src="main.js"></script>
 </body>
-
 </html>

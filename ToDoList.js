@@ -34,8 +34,13 @@ window.addEventListener('load', () => {
         box.appendChild(task_box);
         input.value = "";
         edit_button.addEventListener('click', () => {
-            if (edit_button.innerText.toLowerCase() == "изменить") {
+            if (edit_button.innerText.toLowerCase() === "изменить") {
                 task_name.removeAttribute("readonly");
+                task_name.addEventListener('keydown', (e) =>{
+                    if(e.key === 'Enter') {
+                        edit_button.click()
+                    }
+                })
                 task_buttons.removeChild(delete_button);
                 task_name.focus();
                 edit_button.innerText = "Сохранить";
