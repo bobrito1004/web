@@ -1,4 +1,13 @@
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+window.onload = function () {
+    let el = document.getElementsByClassName("menu__link");
+    for (var i = 0, max = el.length; i < max; i++) {
+        if (el[i].href === document.location.href) {
+            el[i].classList.add("current");
+            break
+        }
+    }
+}
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
