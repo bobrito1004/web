@@ -30,7 +30,7 @@
                         <a href="./ToDoList.html" class="menu__link">Список дел</a>
                     </li>
                     <li>
-                        <a href="./lab6.html" class="menu__link current">lab6</a>
+                        <a href="./lab6.html" class="menu__link">lab6</a>
                     </li>
                 </ul>
             </nav>
@@ -41,14 +41,13 @@
 <main>
     <section class="top-main">
         <div class="container">
+            <p id="error"></p>
             <div class="fetch__button">
                 <button id="btn" type="button" class="button">
                     Показать пост
                 </button>
             </div>
-            <!-- <div class="preloader">
-                Loading...
-              </div> -->
+            <img src="./preloader.gif" alt="nope" id="gif">
             <div class="fetch__body" id="CardDiv"></div>
         </div>
     </section>
@@ -56,4 +55,10 @@
 <script src="./fetch.js"></script>
 <script src="main.js"></script>
 </body>
+<template id="temp">
+    <div class="post">
+        <h3 class="title"></h3>
+        <p class="info"></p>
+    </div>
+</template>
 </html>

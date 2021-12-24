@@ -1,28 +1,34 @@
 var btn = document.getElementById("btn").addEventListener('click', getPost);
-var ID = 0;
+var ID = 1;
 var div = document.getElementById("CardDiv");
 
 function getPost() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    var gif = document.getElementById("gif");
+    var err = document.getElementById("error");
+    gif.style.visibility = "visible";
+    err.textContent = "";
+    fetch('https://jsonplaceholder.typicode.com/posts/' + ID)
         .then((response) => {
             if (response.ok) {
                 return response.json();
             } else {
                 throw new Error(response.status);
             }
-
         })
         .then((post) => {
-            div.innerHTML += `
-            <div class = "post"> 
-                <h3 class = "a">${post[ID][`title`]}</h3>
-                ${post[ID].body}
-            </div>`
-            ID = ID + 1;
+            let tbody = document.querySelector("#CardDiv");
+            let template = document.querySelector("#temp")
+            let clone = template.content.cloneNode(true);
+            let title = clone.querySelector(".title");
+            let info = clone.querySelector(".info");
+            title.textContent = post.title;
+            info.textContent = post.body;
+            tbody.appendChild(clone);
+            ID = ID + 1
+            gif.style.visibility = "hidden";
         })
         .catch((error) => {
-            document.getElementById('CardDiv').innerHTML = '<div class="container"><p>Error</p></div>';
-            console.log("Error: " + error);
+            err.textContent = error;
+            gif.style.visibility = "hidden";
         });
-
 }

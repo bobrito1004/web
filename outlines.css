@@ -323,7 +323,15 @@ body.page__section_1 {
     color: red;
 }
 
-.menu__list li .current {
+.current {
     text-decoration: underline;
     font-weight: bold;
+}
+
+#gif {
+    visibility: hidden;
+}
+
+#err {
+    visibility: hidden;
 }
